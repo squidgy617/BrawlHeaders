@@ -443,253 +443,255 @@ struct EnemyOverride { // Custom Misc Data node
     // HeapType instanceHeapType
     // HeapType resourceHeapType
 
+    // TODO: overrides are u8 instead of ArchiveOverrideSetting due to issues casting as unsigned, eventually would like to change them back
+
     char _ : 4;
     bool m_useIndividualFolders : 1; // for Primids/Glire/Gamygabase
     bool m_overrideModuleCommon : 1;
-    ArchiveOverrideSetting m_overrideCommon : 2;
+    u8 m_overrideCommon : 2;
 
     u8 m_faceIndexGoomba : 5;
     bool m_overrideModuleGoomba : 1;
-    ArchiveOverrideSetting m_overrideGoomba : 2;
+    u8 m_overrideGoomba : 2;
 
     u8 m_faceIndexPoppant : 5;
     bool m_overrideModulePoppant : 1;
-    ArchiveOverrideSetting m_overridePoppant : 2;
+    u8 m_overridePoppant : 2;
 
     u8 m_faceIndexFeyesh : 5;
     bool m_overrideModuleFeyesh : 1;
-    ArchiveOverrideSetting m_overrideFeyesh : 2;
+    u8 m_overrideFeyesh : 2;
 
     u8 m_faceIndexJyk : 5;
     bool m_overrideModuleJyk : 1;
-    ArchiveOverrideSetting m_overrideJyk : 2;
+    u8 m_overrideJyk : 2;
 
     u8 m_faceIndexAuroros : 5;
     bool m_overrideModuleAuroros : 1;
-    ArchiveOverrideSetting m_overrideAuroros : 2;
+    u8 m_overrideAuroros : 2;
 
     u8 m_faceIndexCymul : 5;
     bool m_overrideModuleCymul : 1;
-    ArchiveOverrideSetting m_overrideCymul : 2;
+    u8 m_overrideCymul : 2;
 
     u8 m_faceIndexRoturret : 5;
     bool m_overrideModuleRoturret : 1;
-    ArchiveOverrideSetting m_overrideRoturret : 2;
+    u8 m_overrideRoturret : 2;
 
     u8 m_faceIndexBorboras : 5;
     bool m_overrideModuleBorboras : 1;
-    ArchiveOverrideSetting m_overrideBorboras : 2;
+    u8 m_overrideBorboras : 2;
 
     u8 m_faceIndexGiantGoomba : 5;
     bool m_overrideModuleGiantGoomba : 1;
-    ArchiveOverrideSetting m_overrideGiantGoomba : 2;
+    u8 m_overrideGiantGoomba : 2;
 
     u8 m_faceIndexBuckot : 5;
     bool m_overrideModuleBuckot : 1;
-    ArchiveOverrideSetting m_overrideBuckot : 2;
+    u8 m_overrideBuckot : 2;
 
     u8 m_faceIndexBucculus : 5;
     bool m_overrideModuleBucculus : 1;
-    ArchiveOverrideSetting m_overrideBucculus : 2;
+    u8 m_overrideBucculus : 2;
 
     u8 m_faceIndexGreap : 5;
     bool m_overrideModuleGreap : 1;
-    ArchiveOverrideSetting m_overrideGreap : 2;
+    u8 m_overrideGreap : 2;
 
     u8 m_faceIndexArmight : 5;
     bool m_overrideModuleArmight : 1;
-    ArchiveOverrideSetting m_overrideArmight : 2;
+    u8 m_overrideArmight : 2;
 
     u8 m_faceIndexBulletBill : 5;
     bool m_overrideModuleBulletBill : 1;
-    ArchiveOverrideSetting m_overrideBulletBill : 2;
+    u8 m_overrideBulletBill : 2;
 
     u8 m_faceIndexRoader : 5;
     bool m_overrideModuleRoader : 1;
-    ArchiveOverrideSetting m_overrideRoader : 2;
+    u8 m_overrideRoader : 2;
 
     u8 m_faceIndexSpaak : 5;
     bool m_overrideModuleSpaak : 1;
-    ArchiveOverrideSetting m_overrideSpaak : 2;
+    u8 m_overrideSpaak : 2;
 
     u8 m_faceIndexMite : 5;
     bool m_overrideModuleMite : 1;
-    ArchiveOverrideSetting m_overrideMite : 2;
+    u8 m_overrideMite : 2;
 
     u8 m_faceIndexTicken : 5;
     bool m_overrideModuleTicken : 1;
-    ArchiveOverrideSetting m_overrideTicken : 2;
+    u8 m_overrideTicken : 2;
 
     u8 m_faceIndexTowtow : 5;
     bool m_overrideModuleTowtow : 1;
-    ArchiveOverrideSetting m_overrideTowtow : 2;
+    u8 m_overrideTowtow : 2;
 
     u8 m_faceIndexHammerBro : 5;
     bool m_overrideModuleHammerBro : 1;
-    ArchiveOverrideSetting m_overrideHammerBro : 2;
+    u8 m_overrideHammerBro : 2;
 
     u8 m_faceIndexBytan : 5;
     bool m_overrideModuleBytan : 1;
-    ArchiveOverrideSetting m_overrideBytan : 2;
+    u8 m_overrideBytan : 2;
 
     u8 m_faceIndexFloow : 5;
     bool m_overrideModuleFloow : 1;
-    ArchiveOverrideSetting m_overrideFloow : 2;
+    u8 m_overrideFloow : 2;
 
     u8 m_faceIndexPuppit : 5;
     bool m_overrideModulePuppit : 1;
-    ArchiveOverrideSetting m_overridePuppit : 2;
+    u8 m_overridePuppit : 2;
 
     u8 m_faceIndexPrimid : 5;
     bool m_overrideModulePrimid : 1;
-    ArchiveOverrideSetting m_overridePrimid : 2;
+    u8 m_overridePrimid : 2;
 
     u8 m_faceIndexShellpod : 5;
     bool m_overrideModuleShellpod : 1;
-    ArchiveOverrideSetting m_overrideShellpod : 2;
+    u8 m_overrideShellpod : 2;
 
     u8 m_faceIndexKoopa : 5;
     bool m_overrideModuleKoopa : 1;
-    ArchiveOverrideSetting m_overrideKoopa : 2;
+    u8 m_overrideKoopa : 2;
 
     u8 m_faceIndexShaydas : 5;
     bool m_overrideModuleShaydas : 1;
-    ArchiveOverrideSetting m_overrideShaydas : 2;
+    u8 m_overrideShaydas : 2;
 
     u8 m_faceIndexBombed : 5;
     bool m_overrideModuleBombed : 1;
-    ArchiveOverrideSetting m_overrideBombed : 2;
+    u8 m_overrideBombed : 2;
 
     u8 m_faceIndexPrimidMetal : 5;
     bool m_overrideModulePrimidMetal : 1;
-    ArchiveOverrideSetting m_overridePrimidMetal : 2;
+    u8 m_overridePrimidMetal : 2;
 
     u8 m_faceIndexNagagog : 5;
     bool m_overrideModuleNagagog : 1;
-    ArchiveOverrideSetting m_overrideNagagog : 2;
+    u8 m_overrideNagagog : 2;
 
     u8 m_faceIndexTrowlon : 5;
     bool m_overrideModuleTrowlon : 1;
-    ArchiveOverrideSetting m_overrideTrowlon : 2;
+    u8 m_overrideTrowlon : 2;
 
     u8 m_faceIndexPrimidBig : 5;
     bool m_overrideModulePrimidBig : 1;
-    ArchiveOverrideSetting m_overridePrimidBig : 2;
+    u8 m_overridePrimidBig : 2;
 
     u8 m_faceIndexPrimidBoom : 5;
     bool m_overrideModulePrimidBoom : 1;
-    ArchiveOverrideSetting m_overridePrimidBoom : 2;
+    u8 m_overridePrimidBoom : 2;
 
     u8 m_faceIndexPrimidFire : 5;
     bool m_overrideModulePrimidFire : 1;
-    ArchiveOverrideSetting m_overridePrimidFire : 2;
+    u8 m_overridePrimidFire : 2;
 
     u8 m_faceIndexPrimidScope : 5;
     bool m_overrideModulePrimidScope : 1;
-    ArchiveOverrideSetting m_overridePrimidScope : 2;
+    u8 m_overridePrimidScope : 2;
 
     u8 m_faceIndexPrimidSword : 5;
     bool m_overrideModulePrimidSword : 1;
-    ArchiveOverrideSetting m_overridePrimidSword : 2;
+    u8 m_overridePrimidSword : 2;
 
     u8 m_faceIndexGamyga : 5;
     bool m_overrideModuleGamyga : 1;
-    ArchiveOverrideSetting m_overrideGamyga : 2;
+    u8 m_overrideGamyga : 2;
 
     u8 m_faceIndexROBBlaster : 5;
     bool m_overrideModuleROBBlaster : 1;
-    ArchiveOverrideSetting m_overrideROBBlaster : 2;
+    u8 m_overrideROBBlaster : 2;
 
     u8 m_faceIndexROBDistance : 5;
     bool m_overrideModuleROBDistance : 1;
-    ArchiveOverrideSetting m_overrideROBDistance : 2;
+    u8 m_overrideROBDistance : 2;
 
     u8 m_faceIndexROBLauncher : 5;
     bool m_overrideModuleROBLauncher : 1;
-    ArchiveOverrideSetting m_overrideROBLauncher : 2;
+    u8 m_overrideROBLauncher : 2;
 
     u8 m_faceIndexROBSentry : 5;
     bool m_overrideModuleROBSentry : 1;
-    ArchiveOverrideSetting m_overrideROBSentry : 2;
+    u8 m_overrideROBSentry : 2;
 
     u8 m_faceIndexAutolance : 5;
     bool m_overrideModuleAutolance : 1;
-    ArchiveOverrideSetting m_overrideAutolance : 2;
+    u8 m_overrideAutolance : 2;
 
     u8 m_faceIndexArmank : 5;
     bool m_overrideModuleArmank : 1;
-    ArchiveOverrideSetting m_overrideArmank : 2;
+    u8 m_overrideArmank : 2;
 
     u8 m_faceIndexGlire : 5;
     bool m_overrideModuleGlire : 1;
-    ArchiveOverrideSetting m_overrideGlire : 2;
+    u8 m_overrideGlire : 2;
 
     u8 m_faceIndexGlice : 5;
     bool m_overrideModuleGlice : 1;
-    ArchiveOverrideSetting m_overrideGlice : 2;
+    u8 m_overrideGlice : 2;
 
     u8 m_faceIndexGlunder : 5;
     bool m_overrideModuleGlunder : 1;
-    ArchiveOverrideSetting m_overrideGlunder : 2;
+    u8 m_overrideGlunder : 2;
 
     u8 m_faceIndexPeteyPiranha : 5;
     bool m_overrideModulePeteyPiranha : 1;
-    ArchiveOverrideSetting m_overridePeteyPiranha : 2;
+    u8 m_overridePeteyPiranha : 2;
 
     u8 m_faceIndexGamygaBase01 : 5;
     bool m_overrideModuleGamygaBase01 : 1;
-    ArchiveOverrideSetting m_overrideGamygaBase01 : 2;
+    u8 m_overrideGamygaBase01 : 2;
 
     u8 m_faceIndexGamygaBase02 : 5;
     bool m_overrideModuleGamygaBase02 : 1;
-    ArchiveOverrideSetting m_overrideGamygaBase02 : 2;
+    u8 m_overrideGamygaBase02 : 2;
 
     u8 m_faceIndexGamygaBase03 : 5;
     bool m_overrideModuleGamygaBase03 : 1;
-    ArchiveOverrideSetting m_overrideGamygaBase03 : 2;
+    u8 m_overrideGamygaBase03 : 2;
 
     u8 m_faceIndexGamygaBase04 : 5;
     bool m_overrideModuleGamygaBase04 : 1;
-    ArchiveOverrideSetting m_overrideGamygaBase04 : 2;
+    u8 m_overrideGamygaBase04 : 2;
 
     u8 m_faceIndexGalleom : 5;
     bool m_overrideModuleGalleom : 1;
-    ArchiveOverrideSetting m_overrideGalleom : 2;
+    u8 m_overrideGalleom : 2;
 
     u8 m_faceIndexRidley : 5;
     bool m_overrideModuleRidley : 1;
-    ArchiveOverrideSetting m_overrideRidley : 2;
+    u8 m_overrideRidley : 2;
 
     u8 m_faceIndexRayquaza : 5;
     bool m_overrideModuleRayquaza : 1;
-    ArchiveOverrideSetting m_overrideRayquaza : 2;
+    u8 m_overrideRayquaza : 2;
 
     u8 m_faceIndexDuon : 5;
     bool m_overrideModuleDuon : 1;
-    ArchiveOverrideSetting m_overrideDuon : 2;
+    u8 m_overrideDuon : 2;
 
     u8 m_faceIndexPorky : 5;
     bool m_overrideModulePorky : 1;
-    ArchiveOverrideSetting m_overridePorky : 2;
+    u8 m_overridePorky : 2;
 
     u8 m_faceIndexMetaRidley : 5;
     bool m_overrideModuleMetaRidley : 1;
-    ArchiveOverrideSetting m_overrideMetaRidley : 2;
+    u8 m_overrideMetaRidley : 2;
 
     u8 m_faceIndexFalconFlyer : 5;
     bool m_overrideModuleFalconFlyer : 1;
-    ArchiveOverrideSetting m_overrideFalconFlyer : 2;
+    u8 m_overrideFalconFlyer : 2;
 
     u8 m_faceIndexTabuu : 5;
     bool m_overrideModuleTabuu : 1;
-    ArchiveOverrideSetting m_overrideTabuu : 2;
+    u8 m_overrideTabuu : 2;
 
     u8 m_faceIndexMasterhand : 5;
     bool m_overrideModuleMasterhand : 1;
-    ArchiveOverrideSetting m_overrideMasterHand : 2;
+    u8 m_overrideMasterHand : 2;
 
     u8 m_faceIndexCrazyhand : 5;
     bool m_overrideModuleCrazyhand : 1;
-    ArchiveOverrideSetting m_overrideCrazyHand : 2;
+    u8 m_overrideCrazyHand : 2;
 };
 extern EnemyOverride g_EnemyOverride;
